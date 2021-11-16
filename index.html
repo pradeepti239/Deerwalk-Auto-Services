@@ -45,63 +45,63 @@
       <div class="d-flex flex-column">
         <div class="navigation-item ">
           <div class="navHover" style="left:-95px">Introduction</div>
-          <a href="#intro" class="py-1 navLink">
+          <a href="#intro" class="navLink py-1">
             <button class="circle introcircle" onclick="introcircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-75px">About Us</div>
-          <a href="#aboutus" class="py-1 navLink">
+          <a href="#aboutus" class="navLink py-1">
             <button class="circle aboutcircle" onclick="aboutcircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-100px">Our Services</div>
-          <a href="#services" class="py-1 navLink">
+          <a href="#services" class="navLink py-1">
             <button class="circle servicescircle" onclick="servicescircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-100px">Our Facilities</div>
-          <a href="#facilities" class="py-1 navLink">
+          <a href="#facilities" class="navLink py-1">
             <button class="circle facilitiescircle" onclick="facilitiescircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-60px">Gallery</div>
-          <a href="#gallery" class="py-1 navLink">
+          <a href="#gallery" class="navLink py-1">
             <button class="circle gallerycircle" onclick="gallerycircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-90px">Testimonial</div>
-          <a href="#testimonial" class="py-1 navLink">
+          <a href="#testimonial" class="navLink py-1">
             <button class="circle testimonialcircle" onclick="testimonialcircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-60px">Clients</div>
-          <a href="#clients" class="py-1 navLink">
+          <a href="#clients" class="navLink py-1">
             <button class="circle clientscircle" onclick="clientscircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-84px">Auto Parts</div>
-          <a href="#parts" class="py-1 navLink">
+          <a href="#parts" class="navLink">
             <button class="circle autopartscircle" onclick="autopartscircle()"></button>
           </a>
         </div>
 
         <div class="navigation-item">
           <div class="navHover" style="left:-84px">Contact Us</div>
-          <a href="#footer" class="py-1 navLink">
+          <a href="#footer" class="navLink">
             <button class="circle contactcircle" onclick="contactcircle()"></button>
           </a>
         </div>
@@ -167,6 +167,13 @@
       </nav>
     </section>
     <!-- navigation for mobile end -->
+
+    <section class="scroll-div">
+      <div class="scroll-arrow bounce">
+        <a href="#aboutus"><span><i class="fas fa-chevron-down fa-3x"></i></span></a>
+      </div>
+    </section>
+
 
     <section class="intro_container" id="intro">
 
@@ -422,7 +429,7 @@
 
     <section class="gallery_container section mt-5" id="gallery" style="min-height: 100vh;">
       <div class="title">
-        <h2 class="text-uppercase fs-1 fw-bold text-center m-0" style="line-height: 18vh;">Gallery</h2>
+        <h2 class="text-uppercase fs-1 fw-bold text-center m-0" style="line-height: 20vh;">Gallery</h2>
       </div>
 
       <div class="wrapper images">
@@ -581,7 +588,7 @@
       </div>
       <div class="col-md-6 p-0" style="background: black;">
         <!-- form -->
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="contact px-5 py-5 w-100">
             <h4 class="text-center pb-2" style="color: white;">Contact Us</h4>
             <div class="row">
@@ -622,9 +629,32 @@
     </section>
 
     <section class="popup">
-      <div class="contentBox">
-        <div class="close"><i class="far fa-times-circle"></i></div>
-        <div class="imgBx">
+      <!-- <div class="contentBox"> -->
+      <div class="close"><i class="far fa-times-circle"></i></div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/popup/ad_1.jpg" class="d-block w-100" alt="advertisement">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/popup/ad_1.jpg" class="d-block w-100" alt="advertisement">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/popup/ad_1.jpg" class="d-block w-100" alt="advertisement">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden" style="color: black;">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <div class="imgBx">
           <img src="./images/services/service1.png" alt="advertisement">
         </div>
         <div class="content">
@@ -634,8 +664,8 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima recusandae sunt</p>
             <a href="#">Get the Deal</a>
           </div>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
     </section>
   </div>
   <!-- automatic show popup after 2 seconds on load -->
