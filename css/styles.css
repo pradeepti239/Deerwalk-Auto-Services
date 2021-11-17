@@ -68,6 +68,13 @@
   }
 }
 
+/* about us */
+
+.aboutRight{
+  max-height: 100vh;
+  margin-right: 7vw;
+}
+
 /* about us with scroll bar */
 
 /* .aboutUs_container {
@@ -98,7 +105,9 @@
 .servicesRight {
   position: relative;
   color: white;
-  height: fit-content;
+  margin-right: 7vw;
+  height: 100vh;
+  margin-top: 4vh;
 }
 
 .service {
@@ -315,7 +324,7 @@
 }
 
 .client_container .clients_box {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin: 1%;
   padding: 1%;
 }
@@ -490,7 +499,7 @@
   z-index: 20;
 }
 
-/* .contentBox {
+.contentBox {
   position: relative;
   width: 600px;
   height: 50vh;
@@ -498,23 +507,23 @@
   border-radius: 20px;
   display: flex;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-} */
+}
 
-/* .contentBox .imgBx {
+.contentBox .imgBx {
   position: relative;
   width: 600px;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
-/* .contentBox .imgBx img {
+.contentBox .imgBx img {
   position: relative;
   max-width: 200px;
-} */
+}
 
-/* .contentBox .content {
+.contentBox .content {
   position: relative;
   width: 600px;
   height: 400px;
@@ -554,7 +563,7 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
-} */
+}
 
 .close {
   color: #000;
